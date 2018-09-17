@@ -1,10 +1,130 @@
 /* CSS Document */
-
-body{
-  background-color: red;
-  font-family: 'Roboto Slab', serif;
+body {
+  margin: 0;
+  background-color: #dcece4;
+  font-family: 'Roboto', sans-serif;
 }
 
-h1.header{
-  font-size: 3.5em;
+div.header {
+  margin-top: 90px;
+}
+
+div.container {
+  margin: 60px auto;
+  max-width: 600px;
+  min-width: 200px;
+  font-size: 15px;
+  line-height: 1.5;
+  padding: 0 20px;
+}
+
+h1.header {
+  font-family: 'Roboto Slab', serif;
+  font-size: 3.3em;
+  text-align: center;
+  border-bottom: 30px solid #ffffff;
+  line-height: .2;
+}
+
+h2 {
+  text-align: center;
+}
+
+nav {
+  margin-top: 60px;
+}
+
+nav ul {
+  text-align: center;
+  list-style: none;
+}
+
+nav ul li {
+  display: inline-block;
+  text-align: center;
+  font-size: 1.4em;
+}
+
+a:link {
+  text-decoration: none;
+}
+
+a:visited {
+  text-decoration: none;
+}
+
+/*
+___BUTTON___
+To create the button, I used https://codepen.io/pirrera/pen/bqVeGx for help.
+
+___GRADIENT___
+Found this really cool website with a bunch of different gradient palettes:
+https://uigradients.com/#Memariani
+*/
+.btn {
+  flex: 1 1 auto;
+  margin: 7px;
+  padding: 10px 18px;
+  text-transform: uppercase;
+  font-weight: 500;
+  transition: 0.5s;
+  background-image: linear-gradient(to right, #67B26F 0%, #4ca2cd 51%, #DAD299 100%);
+  background-size: 200% auto;
+  color: white;
+  border-radius: 30px;
+}
+
+.btn:hover {
+  background-position: right center;
+}
+
+#assignments-modal {
+  position: fixed;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  pointer-events: none;
+  opacity: 0;
+  transition: opacity 200ms;
+}
+
+#assignments-modal:target {
+  pointer-events: all;
+  opacity: 1;
+}
+
+#assignments-modal #assignments-modal-content {
+  position: absolute;
+  display: block;
+  padding: 48px;
+  line-height: 1.8;
+  width: 60%;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translateX(-50%) translateY(-50%);
+  transform: translateX(-50%) translateY(-50%);
+  box-shadow: 0px 12px 24px rgba(0, 0, 0, 0.2);
+  background: white;
+  color: #34495E;
+}
+
+#assignments-modal #assignments-modal-content h2 {
+  margin-top: 0;
+}
+
+#assignments-modal a.close {
+  content: "";
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  background-color: #aaaeab;
+  opacity: 0.8;
+  transition: opacity 200ms;
+}
+
+#assignments-modal a.close:hover {
+  opacity: 0.4;
 }
