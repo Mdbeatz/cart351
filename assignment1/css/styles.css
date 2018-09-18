@@ -3,6 +3,8 @@ body {
   margin: 0;
   background-color: #dcece4;
   font-family: 'Roboto', sans-serif;
+  background-image: url("/images/bg.png");
+  background-repeat: repeat;
 }
 
 div.header {
@@ -13,6 +15,7 @@ h1.header {
   font-family: 'Roboto Slab', serif;
   font-size: 3.3em;
   text-align: center;
+  color: #3e3e3e;
   border-bottom: 35px solid #ffffff;
   line-height: .2;
 }
@@ -49,11 +52,11 @@ div.movie-quotes {
 }
 
 p.changeColor:hover {
- color: #5b836e;
+  color: #5b836e;
 }
 
 p.changeColor2:hover {
- color: #d6b653;
+  color: #d6b653;
 }
 
 h2 {
@@ -65,16 +68,8 @@ h2.intro {
   font-size: 2em;
 }
 
-.underline {
-  text-decoration: underline white;
-}
-
-#assignments-modal-content a {
-  color: #3db1b4;
-}
-
-#assignments-modal-content a:hover {
-  color: #f0b037;
+i {
+  color: purple;
 }
 
 a:link {
@@ -91,11 +86,38 @@ a img {
 
 a:hover img {
   display: block;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 .bio {
   text-align: center;
   font-size: 1.2em;
+}
+
+.underline {
+  text-decoration: underline white;
+}
+
+#assignments-modal-content a {
+  color: #78bb7f;
+}
+
+#assignments-modal-content a:hover {
+  color: #f0b037;
+}
+
+#hello-gif {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 50px;
+}
+
+#dashed-dotted {
+  border-top: 5px dashed #ffffff;
+  border-bottom: 6px dotted #f5cc7e;
+  height: 5px;
 }
 
 /*
@@ -113,10 +135,10 @@ https://uigradients.com/#Memariani
   text-transform: uppercase;
   font-weight: 500;
   transition: 0.5s;
-  background-image: linear-gradient(to right, #67B26F 0%, #4ca2cd 51%, #DAD299 100%);
+  background-image: linear-gradient(to right, #78bb7f 0%, #4cc2cd 51%, #f5cc7e 100%);
   background-size: 200% auto;
   color: white;
-  border-radius: 30px;
+  border-radius: 10px;
 }
 
 .btn:hover {
