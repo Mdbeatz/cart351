@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no">
+
+  <title>Assignment 2 - Marianne & Michael</title>
+
+  <link rel="shortcut icon" href="assets/favicon.ico" />
+
+  <!-- CSS -->
+  <link rel="stylesheet" href="css/style.css">
+
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <script src="https://use.fontawesome.com/478e097f2b.js"></script>
+
+  <!-- jQuery -->
+  <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
+
+  <!-- jQuery modal -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-modal/0.9.1/jquery.modal.min.js"></script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/jquery-modal/0.9.1/jquery.modal.min.css" />
+
+</head>
+
+<body>
+  <div id="intro">
+    <button id="start-button">spacebar to start</button>
+  </div>
+
+  <!-- particles.js container -->
+  <div id="particles-js">
+
+    <div class="shootingstarscontainer"></div> <!-- Shooting Stars Generated in custom.js -->
+
+    <p id="title"></p>
+
+    <p id="score"></p>
+
+    <p id="instructions">Catch all 10 shooting stars to make them glow.<br/> Make 3 wishes once they're all glowing.</p>
+
+      <p id="ending">Super! You got all the shooting stars to glow! <br/>Make your wishes.</p>
+
+        <div class="wishContainer">
+          <div class="row">
+            <input type="text" class="col-xs-8 col-sm-9">
+            <div class="input-buttons col-xs-4 col-sm-3">
+              <a href="#" class="add-wish"><i class="fa fa-plus fa-2x"></i></a>
+            </div>
+          </div>
+
+          <div class="row">
+            <div class="alert">
+              <a href="#"><i class="fa fa-times"></i></a>
+              <p>You didn't make a wish... C'mon, go for it!</p>
+            </div>
+
+            <!-- wishes list -->
+            <ul class="wishes col-xs-12"> </ul>
+          </div>
+        </div>
+
+        <p id="authors"></p>
+
+        <audio id="audio" controls src="assets/clair-de-lune_claude-debussy.mp3" type="audio/mpeg"></audio>
+
+  </div>
+
+  <!-- scripts -->
+  <script src="js/particles.js"></script>
+  <script src="js/main.js"></script>
+  <script src="js/custom.js"></script>
+
+</body>
+
+</html>
